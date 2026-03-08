@@ -31,4 +31,4 @@ jobs:
         run: 'gcloud info'
 
       - name: Deploy
-        run: gcloud builds submit --tag southamerica-east1-docker.pkg.dev/vital-amphora-489618-d7/notely-ar-repo/notely:latest .
+        run: gcloud builds submit --tag us-central1-docker.pkg.dev/vital-amphora-489618-d7/notely-ar-repo/notely:latest .
