@@ -36,6 +36,9 @@ jobs:
       - name: Upload image to artifact registry
         run: gcloud builds submit --tag us-central1-docker.pkg.dev/vital-amphora-489618-d7/notely-ar-repo/notely:latest .
 
+      - name: Install goose
+        run: go install github.com/pressly/goose/v3/cmd/goose@latest
+
       - name: Run migrations
         run: ./scripts/migrateup.sh
 
